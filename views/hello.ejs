@@ -32,7 +32,8 @@
   // const message = `私の名前は${profile.name}です。年齢は${profile.age}です。`;
 
   // 分割代入を使うと、こう書ける
-  const { name, age } = profile;
+  // 順番が違ってても名前があってたら取れる
+  const { age, name } = profile;
   const message = `私の名前は${name}です。年齢は${age}です。`;
 
   console.log(message);
