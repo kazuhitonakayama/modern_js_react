@@ -3,9 +3,12 @@
   // const returnName = (value) => {
   //   return 'kazu';
   // };
-  const returnName = value => {
-    return 'kazu';
-  };
+  // アロー関数の引数が1つのとき、`()`を省略できる
+  // const returnName = value => {
+  //   return 'kazu';
+  // };
+  // 処理が単一行の時は`{}`も`return`も省略できる
+  const returnName = value => 'kazu'
 
   // アロー関数の引数が1つのとき、`()`を省略できる
   console.log(returnName('kazu'));
