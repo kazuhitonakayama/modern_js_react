@@ -47,7 +47,9 @@
 </script>
 
 <script> // デフォルト値
-  const sayHelloTo = (name) => console.log(`こんにちは、${name}さん！`)
+  // `=`を使ってデフォルト値を設定できる
+  // `こんにちは、デフォルト名さん！`となる
+  const sayHelloTo = (name = 'デフォルト名') => console.log(`こんにちは、${name}さん！`)
 
   // 何も引数を渡さない時、`こんにちは、undefinedさん！`となる
   sayHelloTo();
