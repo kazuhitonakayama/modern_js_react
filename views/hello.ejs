@@ -23,27 +23,34 @@
 </script>
 
 <script> // 分割代入
-  const profile = ['kazu', 12]
+  // const profile = ['kazu', 12]
 
-  // こうやって毎回profileを書くのは面倒くさいよね
-  // const message = `私の名前は${profile.name}です。年齢は${profile.age}です。`;
+  // // こうやって毎回profileを書くのは面倒くさいよね
+  // // const message = `私の名前は${profile.name}です。年齢は${profile.age}です。`;
 
-  // 分割代入を使うと、こう書ける
-  // 順番が違ってても名前があってたら取れる
-  // const { age, name } = profile;
+  // // 分割代入を使うと、こう書ける
+  // // 順番が違ってても名前があってたら取れる
+  // // const { age, name } = profile;
 
-  // 新しい名前をつけられるよ
-  // const { name: newName, age: newAge } = profile;
-  // const message = `私の名前は${newName}です。年齢は${newAge}です。`;
+  // // 新しい名前をつけられるよ
+  // // const { name: newName, age: newAge } = profile;
+  // // const message = `私の名前は${newName}です。年齢は${newAge}です。`;
 
-  // 配列の場合でも、indexをわざわざ書くのはだるい
-  // const message = `私の名前は${profile[0]}です。年齢は${profile[1]}です。`;
+  // // 配列の場合でも、indexをわざわざ書くのはだるい
+  // // const message = `私の名前は${profile[0]}です。年齢は${profile[1]}です。`;
 
-  // こういう配列の時でも分割代入を用いるとこうかける
-  const [name, age] = profile;
-  const message = `私の名前は${name}です。年齢は${age}です。`;
+  // // こういう配列の時でも分割代入を用いるとこうかける
+  // const [name, age] = profile;
+  // const message = `私の名前は${name}です。年齢は${age}です。`;
 
-  console.log(message);
+  // console.log(message);
+</script>
+
+<script> // デフォルト値
+  const sayHelloTo = (name) => console.log(`こんにちは、${name}さん！`)
+
+  // 何も引数を渡さない時、`こんにちは、undefinedさん！`となる
+  sayHelloTo();
 </script>
 
 <h1>Hello World</h1>
