@@ -37,7 +37,11 @@
   // const message = `私の名前は${newName}です。年齢は${newAge}です。`;
 
   // 配列の場合でも、indexをわざわざ書くのはだるい
-  const message = `私の名前は${profile[0]}です。年齢は${profile[1]}です。`;
+  // const message = `私の名前は${profile[0]}です。年齢は${profile[1]}です。`;
+
+  // こういう配列の時でも分割代入を用いるとこうかける
+ const [name, age] = profile;
+const message = `私の名前は${name}です。年齢は${age}です。`;
 
   console.log(message);
 </script>
