@@ -11,15 +11,26 @@
   // const returnName = value => 'kazu'
 
   // アロー関数を使いつつ、複数行を返す場合は`()`で囲む
-  const returnName = (name, age) => (
-    {
-      name: name,
-      age: age
-    }
-  )
+  // const returnName = (name, age) => (
+  //   {
+  //     name: name,
+  //     age: age
+  //   }
+  // )
 
-  // アロー関数の引数が1つのとき、`()`を省略できる
-  console.log(returnName('kazu', 12));
+  // // アロー関数の引数が1つのとき、`()`を省略できる
+  // console.log(returnName('kazu', 12));
+</script>
+
+<script> // 分割代入
+  const profile = {
+    name: 'kazu',
+    age: 12
+  };
+
+  // こうやって毎回profileを書くのは面倒くさいよね
+  const message = `私の名前は${profile.name}です。年齢は${profile.age}です。`;
+  console.log(message);
 </script>
 
 <h1>Hello World</h1>
