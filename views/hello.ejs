@@ -8,10 +8,18 @@
   //   return 'kazu';
   // };
   // 処理が単一行の時は`{}`も`return`も省略できる
-  const returnName = value => 'kazu'
+  // const returnName = value => 'kazu'
+
+  // アロー関数を使いつつ、複数行を返す場合は`()`で囲む
+  const returnName = (name, age) => (
+    {
+      name: name,
+      age: age
+    }
+  )
 
   // アロー関数の引数が1つのとき、`()`を省略できる
-  console.log(returnName('kazu'));
+  console.log(returnName('kazu', 12));
 </script>
 
 <h1>Hello World</h1>
