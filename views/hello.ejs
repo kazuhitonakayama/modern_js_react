@@ -33,8 +33,11 @@
 
   // 分割代入を使うと、こう書ける
   // 順番が違ってても名前があってたら取れる
-  const { age, name } = profile;
-  const message = `私の名前は${name}です。年齢は${age}です。`;
+  // const { age, name } = profile;
+
+  // 新しい名前をつけられるよ
+  const { name: newName, age: newAge } = profile;
+  const message = `私の名前は${newName}です。年齢は${newAge}です。`;
 
   console.log(message);
 </script>
