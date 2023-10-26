@@ -49,10 +49,14 @@
 <script> // デフォルト値
   // `=`を使ってデフォルト値を設定できる
   // `こんにちは、デフォルト名さん！`となる
-  const sayHelloTo = (name = 'デフォルト名') => console.log(`こんにちは、${name}さん！`)
+  // const sayHelloTo = (name = 'デフォルト名') => console.log(`こんにちは、${name}さん！`)
 
-  // 何も引数を渡さない時、`こんにちは、undefinedさん！`となる
-  sayHelloTo();
+  // スプレッド構文
+  const arr = [1, 2, 3];
+  const sumNumbers = (num1, num2, num3) => console.log(num1 + num2 + num3);
+  sumNumbers(...arr);
 </script>
 
-<h1>Hello World</h1>
+<h1>
+  Hello
+</h1>
