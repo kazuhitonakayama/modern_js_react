@@ -52,9 +52,14 @@
   // const sayHelloTo = (name = 'デフォルト名') => console.log(`こんにちは、${name}さん！`)
 
   // スプレッド構文
-  const arr = [1, 2, 3];
-  const sumNumbers = (num1, num2, num3) => console.log(num1 + num2 + num3);
-  sumNumbers(...arr);
+  // const arr = [1, 2, 3];
+  // const sumNumbers = (num1, num2, num3) => console.log(num1 + num2 + num3);
+  // sumNumbers(...arr);
+
+  // 要素をまとめるスプレッド
+  const arr = [1, 2, 3, 4, 5];
+  const [first, second, ...rest] = arr;
+  console.log(rest); // => [3, 4, 5]
 </script>
 
 <h1>
